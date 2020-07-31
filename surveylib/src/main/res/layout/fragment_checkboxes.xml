@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/LinearLayoutButtons"
+        android:background="@drawable/watch" />
+
+    <ScrollView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView style="?android:textAppearanceMedium"
+                      android:padding="16dp"
+                      android:id="@+id/textview_q_title"
+                      android:lineSpacingMultiplier="1.2"
+                      android:layout_width="match_parent"
+                android:fontFamily="casual"
+                      android:layout_height="wrap_content"
+                      android:text="Title"
+                      android:textColor="#333"
+                      android:layout_marginBottom="20dp"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:id="@+id/linearLayout_checkboxes"></LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+    <include layout="@layout/footer"
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"></include>
+
+
+</LinearLayout>

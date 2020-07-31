@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutButtons"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:text="@string/skip"
+            android:id="@+id/button_skip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            >
+        </Button>
+        <Button
+            android:text="@string/xcontinue"
+            android:id="@+id/button_continue"
+            android:layout_gravity="center_horizontal"
+            android:background="#FF0000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:textSize="16sp"
+            android:layout_weight="1" >
+        </Button>
+    </LinearLayout>
+</LinearLayout>
